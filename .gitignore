@@ -4,3 +4,5 @@
 *.json
 *.data
 data/
+.ipynb_checkpoints/
+.idea/
