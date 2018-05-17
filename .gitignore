@@ -3,3 +3,4 @@
 *.geojson
 *.json
 *.data
+data/
