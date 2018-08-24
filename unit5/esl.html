@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir='ltr' itemscope='' itemtype='http://schema.org/Blog' xmlns:fb='http://www.facebook.com/2008/fbml' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"240011c68f","applicationTime":204,"errorBeacon":"bam.nr-data.net","transactionName":"Jg4MFRNdCllURU4MXBATDAANQUlcX1MEHg==","agent":"","queueTime":0,"beacon":"bam.nr-data.net","applicationID":"11814779"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content='text/css' http-equiv='Content-Style-Type'/>
+<meta content='text/javascript' http-equiv='Content-Script-Type'/>
+<meta content='summary' name='twitter:card'/>
+<meta content='@lang8' name='twitter:site'/>
+
+<title>
+ana&#39;s entries | Lang-8: For learning foreign languages
+</title>
+<link href='/favicon.ico' rel='shortcut icon'/>
+<link href="http://dzhimp63a2tb1.cloudfront.net/assets/static/css/application-fb9d6278f7edc2dc54c6c1300cd7510c.css" media="screen" rel="stylesheet" type="text/css"/>
+<script type="text/cjs">
+var h = document.getElementsByTagName('head')[0];
+var link = document.createElement('link');
+link.href = 'https://fonts.googleapis.com/css?family=Telex';
+link.type = 'text/css';
+link.rel = 'stylesheet';
+link.media = 'screen'
+h.appendChild(link);
+</script>
+
+
+<script src="http://dzhimp63a2tb1.cloudfront.net/assets/static/javascripts/application-462b56e1d78c3fb6374e9b344e47357a.js" type="text/javascript"></script>
+
+<script type='text/javascript'>//<![CDATA[
+var lang="2-2";var sessid="";
+//]]></script>
+
+<meta content='Lang-8的会员遍及世界190多个国家，是一个可以免费学习多种语言并进行不同文化交流的网站。Lang-8，一个让不同母语使用者互相交流学习的网站。' name='description'/>
+<meta content='Lang-8，外语学习、语言学习、在线语言学习、互相修改、交笔友、在线学习、互相学习、外语' name='keywords'/>
+
+<meta content='1NyOQgk3_D9-R1XWpjxkGinHxWufQzM-DTGssOLEIvs' name='google-site-verification'/>
+</head>
+<body data-device='pc' id='journals_index'>
+<script type="text/javascript">var langsData=[];langsData.push({key:'cjv',body:'Whoops! Some correction boxes are still open. Please close them and try again.'});langsData.push({key:'ckb',body:'Please correct some sentences or comments on this journal.'});langsData.push({key:'cka',body:'Corrections'});langsData.push({key:'cjz',body:'Comment'});langsData.push({key:'cjt',body:'Post'});langsData.push({key:'cju',body:'Back to correcting'});langsData.push({key:'cjw',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'cjx',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'cjy',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'D063',body:'There has been an internal system error.'});langsData.push({key:'chc',body:'Show corrections'});langsData.push({key:'chd',body:'Hide'});langsData.push({key:'xlw',body:'Do you really want to reset the data?'});langsData.push({key:'xlx',body:'You have already started to leave a comment on this journal. Do you want to continue with it?'});langsData.push({key:'xly',body:'Continue'});langsData.push({key:'xlz',body:'No'});langsData.push({key:'cix',body:'Red'});langsData.push({key:'ciy',body:'Blue'});langsData.push({key:'qag',body:'Gray'});langsData.push({key:'ciz',body:'Bold'});langsData.push({key:'cja',body:'Cross out'});langsData.push({key:'cjb',body:'Preview'});langsData.push({key:'cjc',body:'Cancel'});langsData.push({key:'cjd',body:'Correct'});langsData.push({key:'cje',body:'Unformat'});langsData.push({key:'rgo',body:'This sentence is perfect! No correction needed!'});langsData.push({key:'xll',body:'This is the original post.'});langsData.push({key:'xlm',body:'To correct, click this button.'});langsData.push({key:'xln',body:'You can use the colored fonts and strikethrough feature to help you with your correction.'});langsData.push({key:'xlo',body:'After correcting, please press this button.'});langsData.push({key:'xlp',body:'Your corrections are displayed here.'});langsData.push({key:'xlq',body:'Press this button to complete the correction.'});langsData.push({key:'xmm',body:'Sending...'});langsData.push({key:'xmn',body:'done'});langsData.push({key:'ycs',body:'Success! A friend request will now be sent to your friend.'});langsData.push({key:'xog',body:'Failed to send the friend request. Please try again in a few minutes.'});langsData.push({key:'cit',body:'Comments on this correction'});langsData.push({key:'cir',body:'Add to /Edit My Notebook'});langsData.push({key:'rfv',body:'Vertical View'});langsData.push({key:'rfw',body:'Normal View'});langsData.push({key:'cjb',body:'Preview'});langsData.push({key:'cjp',body:'Cancel'});langsData.push({key:'cjr',body:'Remove correction'});langsData.push({key:'ckc',body:'Description about correction.(You can write in any language.)'});langsData.push({key:'cjk',body:'Whoops! Some correction boxes are still open. Please close them and try again.'});langsData.push({key:'cjl',body:'There are not any comments or corrections.'});langsData.push({key:'cjh',body:'Correct this entry'});langsData.push({key:'cjf',body:'Comment'});langsData.push({key:'cjm',body:'There has been an internal system error. Please try again.'});langsData.push({key:'kbm',body:'Draft Saved'});var l8=l8||{};l8.t=l8.t||{};l8.t=new L8I18n(langsData);</script>
+
+<div class='navbar navbar-fixed-top mb_20' id='header'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<div class='nav-collapse'>
+<ul class='nav' id='dropmenu03'>
+<li class='logoname'>
+<a class='brand' href='/'>
+<img alt="Header_logo-5ad8f70fcf9b61838c1f218b7abf3dd0" id="logo" src="http://dzhimp63a2tb1.cloudfront.net/assets/static/images2/header/header_logo-5ad8f70fcf9b61838c1f218b7abf3dd0.gif"/>
+</a>
+</li>
+<li class='divider'></li>
+<li class='home'>
+<a href="/" class="a_home" title="Home"><img alt="Ico_home-eaf24c41a75d4f4f581dcf7a768ea9cb" src="http://dzhimp63a2tb1.cloudfront.net/assets/static/images2/header/ico_home-eaf24c41a75d4f4f581dcf7a768ea9cb.png" title="Home"/>
+</a></li>
+<li class='divider'></li>
+<li class='help'>
+<a href="/help/about" class="help" target="_blank" title="What is Lang-8?"><span>
+What is Lang-8?
+</span>
+</a></li>
+<li class='divider'></li>
+</ul>
+<ul class='nav pull-right' id='dropmenu02'>
+<li class='help'>
+<a href="/register/step1?from=header" class="help"><span>Sign up</span>
+</a></li>
+<li class='divider'></li>
+<li class='help' id='login'>
+<a href="https://lang-8.com/login?from=header" class="help"><span>Log in</span>
+</a></li>
+<li class='divider'></li>
+<li class='language_list'>
+<form action="" class="language_select" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="y7dLZRLacr8QZC6sgUG/8oMBLPiV3dSXdgrYsKHD4u8="/></div>
+<select id="interface_lang" name="interface_lang" onchange="onChangeInterfaceLang()"><option value="2-2" selected="selected">English</option>
+<option value="2-5">Español</option>
+<option value="2-6">français</option>
+<option value="2-8">Deutsch</option>
+<option value="2-95">Português(Portugal)</option>
+<option value="2-10">Русский</option>
+<option value="2-59">Polski</option>
+<option value="2-78">Hrvatski</option>
+<option value="2-30">العربية</option>
+<option value="2-1">日本語</option>
+<option value="2-3">中文(简体)</option>
+<option value="2-300">中文(繁體)</option>
+<option value="2-4">한국어</option>
+<option value="2-20">ภาษาไทย</option>
+<option value="2-35">Svenska</option>
+<option value="2-47">Tagalog</option>
+<option value="2-65">Bahasa Melayu</option>
+<option value="2-58">Indonesian</option>
+<option value="2-7">Italiano</option></select>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='alerter container alert fade in navbar-fixed-top' id='alert-top' style='top:60px;display:none;'>
+<a class='close' data-dismiss='alert' href='#'>
+&times;
+</a>
+<strong class='alert-message-title'>
+Alert!
+</strong>
+<span class='alert-message-body'>
+Alert Message here
+</span>
+</div>
+<div class='alerter alert fade in navbar-fixed-top' id='alert-box' style='left:40%;top:40%;width:200px;display:none;'>
+<div style='text-align:center;'>
+<strong class='alert-message-title'>
+Alert!
+</strong>
+<span class='alert-message-body'>
+Alert message here
+</span>
+</div>
+</div>
+
+
+
+
+      <div class="center" style="margin-bottom: 10px;">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- PC_Super_Before_Login -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6717840198266056" data-ad-slot="9171779343" data-ad-format="auto"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+      </div>
+
+
+
+
+<div id='page_content'>
+<div class='cfx' id='main_container'>
+<ul class="cfx" id="breadcrumbs"><li class="home"><a href="/">Home</a></li><li class=""><a href="/profiles/search">Member</a></li><li class=""><a href="/2581">ana</a></li><li class=""><span>ana's entries</span></li></ul>
+<div class='cfx' id='main_container'>
+<div id='block_tab'>
+	 <div id="friend_activity_container" class="cfx">
+	 <div id="block_tab">
+	 <div class="tab friends_home on_middle ">
+	 	<a href="/2581">ana's Home</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	<a href="/2581/friends">Friends</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle selected">
+	 	Journal
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	<a href="/2581/notebook">Notebook</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	Photo Album
+	   </div>
+	 </div>
+	</div>
+
+
+</div>
+<div id='main'>
+<div class='cfx'>
+<div class='tit_03'>
+
+<h3>
+ana's entry
+(8)
+</h3>
+</div>
+<div class='spaced center center_bdb d_block pb_20' id='write_entry_btn' style='margin-top:0'>
+<a href="/journals/edit?post_from=My+Journals" class="bt_lvs d_block w70"><span class='i_s'>Post an entry now!</span>
+</a></div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/148171">Long time no see!</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Hello everyone.
+How are you?
+I have not opened at this site about four months.
+Maybe I want to avoid writhing article in English.
+
+A...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>330</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>3</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+May 15, 2009 11:11
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/32321">let&#39;s go! 4</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Please correcting this sentence.
+I want to translate this from Japanese to English,
+
+Last time 
+It was corrected some friends.( Thank...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>282</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>2</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Oct 14, 2008 13:25
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/31548">let&#39;s go ! 3</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>私達の住む街には、障がいがあるために街に出かけたり、学校へ通ったり、仕事をもつことが難しい人達がたくさん暮らしています。
+So many people who are difficult to go out the town and school because of t...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>350</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Oct 11, 2008 19:43
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/31009">Let&#39;s go! 2</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>私達は、障がいのある人もない人も一緒に楽しめ、誰もが参加できるスポーツ、ふうせんバレーボールを考案しました。共に支えあい生きることのできる社会づくりを夢見て。
+
+We created new sport game &quot;The balloon volleyball...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>294</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>4</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>2</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Oct 9, 2008 21:26
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/28515">The big problem</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>I got a letter from The ministry of Health and Welfare.
+They said I have to check of my pension record.
+So I checked the pension record...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>309</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>2</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>5</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Oct 1, 2008 07:07
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/25952">please give me your help.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Today I got email from a delegate of the Balloon volleyball.
+They have been talking about the emblem of The Balloon volleyball.
+
+Fusen...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>230</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>5</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>3</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Sep 23, 2008 23:13
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/25547">I tried to translate the article.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Yesterday I went to join English table at KIA.
+There are near by my house, KIA have some voulanteer language class, we call it &quot;Eng...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>221</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>4</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>2</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Sep 21, 2008 23:24
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/2581" class="user_name">ana</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/2581/journals/5746">the snowy day</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>This morning  we got a lots of snow here.I 
+This snow remind me  the memory when I was a child.
+My parents&#39; house were on the top o...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>213</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>2</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>3</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 13, 2008 15:25
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+
+<div class='entry_ichiran'>
+
+</div>
+</div>
+</div>
+<div id='right'>
+<div class='cfx friend_detail_sidebar' id='friend_detail'>
+<div class='box'>
+<div id='profile_image'>
+<a href="/2581/images"><img alt="Pictures" src="http://image.lang-8.com/w200_h200/no_image.gif"/></a>
+</div>
+</div>
+<div class='box'>
+<h2>ana</h2>
+<div class='timeago'>
+(
+Last log in
+: More than 3 days ago
+)
+</div>
+</div>
+<div class='box'>
+<dl class='language_status cfx lang_status_box'>
+<dt class='speaking'>Native language</dt>
+<dd class='speaking_lang_name'>Japanese</dd>
+<dt class='studying'>Language of study</dt>
+<dd class='studying_lang_name'>
+
+English
+<br/>
+English
+</dd>
+</dl>
+</div>
+<div class='box'>
+<div class='bdbox'>
+<table class='entry_status'>
+<tr>
+<td class='l01'>
+<p><a href="/2581/journals">33</a></p>
+<span>Entries Written</span>
+</td>
+<td class='l02'>
+<p><a href="/2581/correction_logs/sent">3</a></p>
+<span>Corrections made</span>
+</td>
+<td class='l03'>
+<p><a href="/2581/correction_logs/received">44</a></p>
+<span>Corrections received</span>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+<div class='box'>
+<div class='mb_20' id='communication_buttons'>
+</div>
+</div>
+<div class='box'>
+<div class='profile_bx'>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>ID</div>
+2581
+</div>
+<div class='user_profile_row' data-content='Every time you make corrections or receive Thanks points, you get more L points. The more L points you have, the higher your posts will be listed, making them more likely to be corrected.' data-original-title='L points' data-placement='top' data-trigger='hover' rel='popover' title='L points'>
+<div class='subtitle floated_on_left'>L points</div>
+150
+</div>
+</div>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3 style='margin-top:10px'>Ranking</h3>
+</div>
+
+<span class='l_point_ranking'>468</span>
+/
+1,165,482
+(English)
+<br/>
+<span class='l_point_ranking'>468</span>
+/
+1,165,482
+(English)
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3 style='margin-top:10px'>Points</h3>
+</div>
+<ul class='friend_status cfx'>
+<li class='corrections_num_big' data-content='Number of corrections made.' data-original-title='No. of corrections' data-trigger='hover' rel='popover' title='No. of corrections'>
+3
+</li>
+<li class='thanks_pt' data-content='Number of Thanks Points from users you have helped.' data-original-title='Stars' data-trigger='hover' rel='popover' title='Stars'>
+0
+</li>
+<li class='good_pt' data-content='Number of corrections rated highly by other native speakers.' data-original-title='Native Nods' data-trigger='hover' rel='popover' title='Native Nods'>
+0
+</li>
+</ul>
+<ul class='floated_on_left' id='correction_history' style='margin-top:10px'>
+<li><a href="/2581/correction_logs/sent">History of corrections by ana</a></li>
+<li><a href="/2581/correction_logs/received">History of corrections for ana</a></li>
+</ul>
+</div>
+</div>
+
+
+  
+    <script type="text/javascript">google_ad_client="ca-pub-6717840198266056";google_ad_slot="1415028544";google_ad_width=300;google_ad_height=250;</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+  
+
+
+<div class='box'>
+<div id='journals_calendar'>
+<div class='yui-skin-sam'>
+<div id='jour_cal'>
+    <div id="cal1Container"></div>
+    <script type="text/javascript">//<![CDATA[
+(function(){var cal1=null,popupHolder=[],cal_journal_dates={},str_dates='',date_info=[{"journal_id":148171,"journal_date":1242353505},{"journal_id":32321,"journal_date":1223958355},{"journal_id":31548,"journal_date":1223721810},{"journal_id":31009,"journal_date":1223555167},{"journal_id":28515,"journal_date":1222812460},{"journal_id":25952,"journal_date":1222179194},{"journal_id":25547,"journal_date":1222007080},{"journal_id":5746,"journal_date":1202883914}],now_server2local="08/2018",selected_date='',date_info_json=Object.toJSON(date_info),args=getArgsFromHref(location.href);if(args['begin']!=null){var begin_date_a=args['begin'].split('-');var page_date=begin_date_a[1]+'/'+begin_date_a[0];}else if(args['date']!=null){var date_a=args['date'].split('-');var page_date=date_a[1]+'/'+date_a[0];}else{var page_date=now_server2local;}var pathname=location.pathname.split('/');for(var i=0,len=date_info.length;i<len;++i){var tmp_date=new Date(parseInt(date_info[i].journal_date*1000)).toYAHOODateString();if(cal_journal_dates[tmp_date]){cal_journal_dates[tmp_date]=cal_journal_dates[tmp_date]+'/'+date_info[i].journal_id;}else{cal_journal_dates[tmp_date]=date_info[i].journal_id;str_dates=str_dates+','+tmp_date;}}function init(){cal1=new YAHOO.widget.Calendar('cal1','cal1Container',{LOCALE_MONTHS:'short',LOCALE_WEEKDAYS:'1char',pagedate:page_date});cal1.styleCellDefault=function(workingDate,cell){YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_OOB);}
+cal1.renderCellDefault=function(workingDate,cell){cell.innerHTML='<a class="'+cal1.Style.CSS_CELL_SELECTOR+'">'+cal1.buildDayLabel(workingDate)+"</a>";}
+cal1.renderCellHasJournals=function(workingDate,cell){cell.innerHTML='<a href="/'+'2581'+'/journals?date='+workingDate.toStringYYMMDD()+'" class="'+cal1.Style.CSS_CELL_SELECTABLE+'">'+cal1.buildDayLabel(workingDate)+"</a>";YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_SELECTABLE);YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_HIGHLIGHT1);if(workingDate.getDate()==cal1.today.getDate()&&workingDate.getMonth()==cal1.today.getMonth()&&workingDate.getFullYear()==cal1.today.getFullYear()){YAHOO.util.Dom.removeClass(cell,cal1.Style.CSS_CELL_TODAY);}return YAHOO.widget.Calendar.STOP_RENDER;}
+cal1.addRenderer(str_dates,cal1.renderCellHasJournals);cal1.render();}function getArgsFromHref(sHref){var args=sHref.split('?');var retargs={}
+if(args[0]==sHref){return"";}var str=args[1];args=str.split('&');for(var i=0;i<args.length;i++){str=args[i];var arg=str.split('=');if(arg.length<=1)continue;retargs[arg[0]]=arg[1];}return retargs;}YAHOO.util.Event.onAvailable('cal1Container',init);})();
+//]]></script>
+
+</div>
+</div>
+</div>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Journal Statistics</h3>
+</div>
+<div class='cfx' id='studying_status'>
+<table class='table side-bar table_statusstudy'>
+<tr>
+<th>Total</th>
+<th>This month</th>
+<th>This week</th>
+</tr>
+<tr>
+<td>
+<p><a href="/2581/journals">8</a></p>
+<span>
+Entries Written
+</span>
+</td>
+<td>
+<p><a href="/2581/journals" id="monthCount">0</a></p>
+<span>
+Entries Written
+</span>
+</td>
+<td>
+<p><a href="/2581/journals" id="todayCount">0</a></p>
+<span>
+Entries Written
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+(function(){var date_info=[{"journal_id":148171,"journal_date":1242353505},{"journal_id":32321,"journal_date":1223958355},{"journal_id":31548,"journal_date":1223721810},{"journal_id":31009,"journal_date":1223555167},{"journal_id":28515,"journal_date":1222812460},{"journal_id":25952,"journal_date":1222179194},{"journal_id":25547,"journal_date":1222007080},{"journal_id":5746,"journal_date":1202883914}],cur_month_counter=0,week_counter=0;var now_date=new Date(),DateMath=YAHOO.widget.DateMath;var now_date_week_begin=DateMath.getFirstDayOfWeek(now_date,0);var now_date_week_end=DateMath.add(now_date_week_begin,'D',6);for(var i=0,len=date_info.length;i<len;++i){var tmp_date=new Date(date_info[i].journal_date*1000);if(tmp_date.getFullYear()==now_date.getFullYear()){if(tmp_date.getMonth()==now_date.getMonth()){cur_month_counter+=1;if(DateMath.getWeekNumber(tmp_date,0)==DateMath.getWeekNumber(now_date,0)){week_counter+=1;}}}}if(week_counter!=0){$('todayCount').update(week_counter);$('todayCount').href=$('todayCount').href+'?begin='+now_date_week_begin.toStringYYMMDD()+'&end='+now_date_week_end.toStringYYMMDD();}else{$('todayCount').href="#";}if(cur_month_counter!=0){$('monthCount').update(cur_month_counter);$('monthCount').href=$('monthCount').href+'?begin='+DateMath.findMonthStart(now_date).toStringYYMMDD()+'&end='+DateMath.findMonthEnd(now_date).toStringYYMMDD();}else{$('monthCount').href="#";}})();
+//]]></script>
+
+<div class='box'>
+<div class='tit_03'>
+<h3>Latest entries</h3>
+</div>
+<table class='table side-bar ar_icobox'>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/148171">Long time no see! (4) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/32321">let&#39;s go! 4 (3) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/31548">let&#39;s go ! 3 (1) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/31009">Let&#39;s go! 2 (6) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/28515">The big problem (7) </a></td>
+</tr>
+</table>
+<p class='read_more2'><a href="/2581/journals" class="bt_lv3"><i class='i_arrow'></i>Read more</a></p>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Latest comments</h3>
+</div>
+<table class='table ar_icobox side-bar'>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/148171">Jun 4 ana</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/148171">May 30 bcs</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/148171">May 17 ana</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/148171">May 16 Curl</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/2581/journals/31009">Mar 28 Koichiro</a></td>
+</tr>
+</table>
+<p class='read_more2'><a href="/2581/journals/comments" class="bt_lv3"><i class='i_arrow'></i>Read more</a></p>
+</div>
+<div class='box cfx' id='d_draft_list'>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Entries by Month</h3>
+</div>
+<table class='table ar_icobox side-bar'>
+<tr>
+<th class='year'>2009</th>
+</tr>
+<tr>
+<td>
+ <a href="/2581/journals?begin=2009-5-1&amp;end=2009-05-31">May (1)</a>
+</td>
+</tr>
+<tr>
+<th class='year'>2008</th>
+</tr>
+<tr>
+<td>
+ <a href="/2581/journals?begin=2008-10-1&amp;end=2008-10-31">October (4)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/2581/journals?begin=2008-9-1&amp;end=2008-09-30">September (2)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/2581/journals?begin=2008-2-1&amp;end=2008-02-29">February (1)</a>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div data-search_url='' id='footer'>
+<div class='inner'>
+<div class='box clearfix'>
+<ul class='ft_parts_list f_left'>
+<ul class='ft_parts_list f_left'></ul>
+</ul>
+</div>
+<div class='box02 clearfix'>
+<ul>
+
+</ul>
+<ul>
+<li>
+<p>
+Study
+</p>
+<ul>
+<li><a href="/profiles/search">Member Search</a></li>
+<li><a href="/hotentries">Popular Entries</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+View
+</p>
+<ul>
+<li><a href="/rankings">Rankings</a></li>
+<li>
+<a href="/groups">Groups</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Help
+</p>
+<ul>
+<li><a href="/help/tumblr" target="_blank">Help</a></li>
+<li><a href="/register/term" target="_blank">Terms of Service</a></li>
+<li><a href="/register/privacy" target="_blank">Privacy Policy</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+About Lang-8
+</p>
+<ul>
+<li><a href="/help/law_1" target="_blank">特定商取引法に基づく表記</a></li>
+<li><a href="/help/donation" target="_blank">Donate</a></li>
+<li><a href="http://lang-8.jp/" target="_blank">Company</a></li>
+<li><a href="http://lang-8.jp/#recruit" target="_blank">Travailler pour Lang-8</a></li>
+<li>
+<a href='mailto:support@lang-8.com'>Contact us</a>
+</li>
+<li>&nbsp;</li>
+</ul>
+</li>
+</ul>
+<ul id='social_web_list'>
+<li class='icon_with twitter'>
+<a class='twitter-follow-button' data-show-count='false' href='https://twitter.com/lang8'>Follow @lang8</a>
+<script defer="defer" src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</li>
+<li class='icon_with facebook'><a href="http://www.facebook.com/lang8" target="_blank">Facebook page</a></li>
+<li class='icon_with rss'><a href="http://blog.lang-8.com" target="_blank">Lang-8 blog</a></li>
+</ul>
+</div>
+<div class='box03 clearfix'>
+<li class='f_left panel_list'>
+<a href='https://mixpanel.com/f/partner' target='_blank'>
+<img alt='Mobile and Web Analytics' src='https://mixpanel.com/site_media/images/partner/badge_light.png'/>
+</a>
+</li>
+<p class='copy f_right'>
+&copy; 2017 Lang-8, Inc. All rights reserved.
+</p>
+</div>
+</div>
+</div>
+
+
+<script type='text/javascript'>//<![CDATA[
+var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var pageTracker;autoRetry(function(){pageTracker=_gat._getTracker("UA-452011-7");pageTracker._setDomainName("none");pageTracker._setAllowLinker(true);pageTracker._initData();pageTracker._trackPageview("/before/journals");},2);
+//]]></script>
+
+
+<script type='text/javascript'>//<![CDATA[
+$j(function(){$j('[rel=tooltip]').tooltip();$j('[rel=popover]').popover();});
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var cjsscript=document.createElement('script');cjsscript.src="/static/javascripts/control_js.js";var cjssib=document.getElementsByTagName('script')[0];cjssib.parentNode.insertBefore(cjsscript,cjssib);
+//]]></script>
+<div id='fb-root'></div>
+<script type='text/javascript'>//<![CDATA[
+(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=138873442911";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));
+//]]></script>
+</body>
+</html>
