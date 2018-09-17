@@ -1,0 +1,14 @@
+Cache-Control: private, max-age=0, must-revalidate
+Cache-Control: max-age=0, no-cache, s-maxage=10
+Content-Encoding: gzip
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 17 Sep 2018 02:14:42 GMT
+Etag: "79e04bb2383dc3d27d650a829d7ba48c"
+Server: Apache
+Set-Cookie: _lang-8_rails_session=BAh7CDoOcmV0dXJuX3RvIhMvMjU4MS9qb3VybmFsczoPc2Vzc2lvbl9pZCIlMWYyZDNkYTFhOTBjMDk5NGZhMzZmOTIxZTg4NmMxNTk6EF9jc3JmX3Rva2VuIjE1RFQxZDhmc2U1dWlmWnVlM3FvaGg5T0xaRmVtenVMb1VneGxwb0pGcVg0PQ%3D%3D--ad11646b7d9633abfbd84b985464ea23a93118f9; path=/; HttpOnly
+Status: 200
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Mod-Pagespeed: 1.12.34.1-0
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.18
+X-Runtime: 142
