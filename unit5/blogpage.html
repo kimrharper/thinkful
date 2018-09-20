@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir='ltr' itemscope='' itemtype='http://schema.org/Blog' xmlns:fb='http://www.facebook.com/2008/fbml' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":304,"applicationID":"11814779","agent":"","transactionName":"Jg4MFRNdCllURU4MXBATDAANQUlcX1MEHg==","licenseKey":"240011c68f","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","queueTime":0}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content='text/css' http-equiv='Content-Style-Type'/>
+<meta content='text/javascript' http-equiv='Content-Script-Type'/>
+<meta content='summary' name='twitter:card'/>
+<meta content='@lang8' name='twitter:site'/>
+
+<title>
+aratin&#39;s entries | Lang-8: For learning foreign languages
+</title>
+<link href='/favicon.ico' rel='shortcut icon'/>
+<link href="http://dzhimp63a2tb1.cloudfront.net/assets/static/css/application-ec36f0522b3268a5c9d369807957ce12.css" media="screen" rel="stylesheet" type="text/css"/>
+<script type="text/cjs">
+var h = document.getElementsByTagName('head')[0];
+var link = document.createElement('link');
+link.href = 'https://fonts.googleapis.com/css?family=Telex';
+link.type = 'text/css';
+link.rel = 'stylesheet';
+link.media = 'screen'
+h.appendChild(link);
+</script>
+
+
+<script src="http://dzhimp63a2tb1.cloudfront.net/assets/static/javascripts/application-462b56e1d78c3fb6374e9b344e47357a.js" type="text/javascript"></script>
+
+<script type='text/javascript'>//<![CDATA[
+var lang="2-2";var sessid="";
+//]]></script>
+
+<meta content='Lang-8 is the best place for learning and practicing foreign languages. Post an entry in the language you are learning, then a native speaker will correct your entries. Currently there are more than 80 languages available on Lang-8.' name='description'/>
+<meta content='Lang-8, language, learning, free, native, language exchange, learning, penpals, pen pals, pen friends, epals, practice, second language, distance education' name='keywords'/>
+
+<meta content='1NyOQgk3_D9-R1XWpjxkGinHxWufQzM-DTGssOLEIvs' name='google-site-verification'/>
+</head>
+<body data-device='pc' id='journals_index'>
+<script type="text/javascript">var langsData=[];langsData.push({key:'cjv',body:'Whoops! Some correction boxes are still open. Please close them and try again.'});langsData.push({key:'ckb',body:'Please correct some sentences or comments on this journal.'});langsData.push({key:'cka',body:'Corrections'});langsData.push({key:'cjz',body:'Comment'});langsData.push({key:'cjt',body:'Post'});langsData.push({key:'cju',body:'Back to correcting'});langsData.push({key:'cjw',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'cjx',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'cjy',body:'Are you sure you want to leave this page? Some correction boxes are still open.'});langsData.push({key:'D063',body:'There has been an internal system error.'});langsData.push({key:'chc',body:'Show corrections'});langsData.push({key:'chd',body:'Hide'});langsData.push({key:'xlw',body:'Do you really want to reset the data?'});langsData.push({key:'xlx',body:'You have already started to leave a comment on this journal. Do you want to continue with it?'});langsData.push({key:'xly',body:'Continue'});langsData.push({key:'xlz',body:'No'});langsData.push({key:'cix',body:'Red'});langsData.push({key:'ciy',body:'Blue'});langsData.push({key:'qag',body:'Gray'});langsData.push({key:'ciz',body:'Bold'});langsData.push({key:'cja',body:'Cross out'});langsData.push({key:'cjb',body:'Preview'});langsData.push({key:'cjc',body:'Cancel'});langsData.push({key:'cjd',body:'Correct'});langsData.push({key:'cje',body:'Unformat'});langsData.push({key:'rgo',body:'This sentence is perfect! No correction needed!'});langsData.push({key:'xll',body:'This is the original post.'});langsData.push({key:'xlm',body:'To correct, click this button.'});langsData.push({key:'xln',body:'You can use the colored fonts and strikethrough feature to help you with your correction.'});langsData.push({key:'xlo',body:'After correcting, please press this button.'});langsData.push({key:'xlp',body:'Your corrections are displayed here.'});langsData.push({key:'xlq',body:'Press this button to complete the correction.'});langsData.push({key:'xmm',body:'Sending...'});langsData.push({key:'xmn',body:'done'});langsData.push({key:'ycs',body:'Success! A friend request will now be sent to your friend.'});langsData.push({key:'xog',body:'Failed to send the friend request. Please try again in a few minutes.'});langsData.push({key:'cit',body:'Comments on this correction'});langsData.push({key:'cir',body:'Add to /Edit My Notebook'});langsData.push({key:'rfv',body:'Vertical View'});langsData.push({key:'rfw',body:'Normal View'});langsData.push({key:'cjb',body:'Preview'});langsData.push({key:'cjp',body:'Cancel'});langsData.push({key:'cjr',body:'Remove correction'});langsData.push({key:'ckc',body:'Description about correction.(You can write in any language.)'});langsData.push({key:'cjk',body:'Whoops! Some correction boxes are still open. Please close them and try again.'});langsData.push({key:'cjl',body:'There are not any comments or corrections.'});langsData.push({key:'cjh',body:'Correct this entry'});langsData.push({key:'cjf',body:'Comment'});langsData.push({key:'cjm',body:'There has been an internal system error. Please try again.'});langsData.push({key:'kbm',body:'Draft Saved'});var l8=l8||{};l8.t=l8.t||{};l8.t=new L8I18n(langsData);</script>
+
+<div class='navbar navbar-fixed-top mb_20' id='header'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<div class='nav-collapse'>
+<ul class='nav' id='dropmenu03'>
+<li class='logoname'>
+<a class='brand' href='/'>
+<img alt="Header_logo-5ad8f70fcf9b61838c1f218b7abf3dd0" id="logo" src="http://dzhimp63a2tb1.cloudfront.net/assets/static/images2/header/header_logo-5ad8f70fcf9b61838c1f218b7abf3dd0.gif"/>
+</a>
+</li>
+<li class='divider'></li>
+<li class='home'>
+<a href="/" class="a_home" title="Home"><img alt="Ico_home-eaf24c41a75d4f4f581dcf7a768ea9cb" src="http://dzhimp63a2tb1.cloudfront.net/assets/static/images2/header/ico_home-eaf24c41a75d4f4f581dcf7a768ea9cb.png" title="Home"/>
+</a></li>
+<li class='divider'></li>
+<li class='help'>
+<a href="/help/about" class="help" target="_blank" title="What is Lang-8?"><span>
+What is Lang-8?
+</span>
+</a></li>
+<li class='divider'></li>
+</ul>
+<ul class='nav pull-right' id='dropmenu02'>
+<li class='help'>
+<a href="/register/step1?from=header" class="help"><span>Sign up</span>
+</a></li>
+<li class='divider'></li>
+<li class='help' id='login'>
+<a href="https://lang-8.com/login?from=header" class="help"><span>Log in</span>
+</a></li>
+<li class='divider'></li>
+<li class='language_list'>
+<form action="" class="language_select" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="md/PcV28hOPLaxNddrY8wiXBV3JZgcHuEUYRbuj8ESg="/></div>
+<select id="interface_lang" name="interface_lang" onchange="onChangeInterfaceLang()"><option value="2-2" selected="selected">English</option>
+<option value="2-5">Español</option>
+<option value="2-6">français</option>
+<option value="2-8">Deutsch</option>
+<option value="2-95">Português(Portugal)</option>
+<option value="2-10">Русский</option>
+<option value="2-59">Polski</option>
+<option value="2-78">Hrvatski</option>
+<option value="2-30">العربية</option>
+<option value="2-1">日本語</option>
+<option value="2-3">中文(简体)</option>
+<option value="2-300">中文(繁體)</option>
+<option value="2-4">한국어</option>
+<option value="2-20">ภาษาไทย</option>
+<option value="2-35">Svenska</option>
+<option value="2-47">Tagalog</option>
+<option value="2-65">Bahasa Melayu</option>
+<option value="2-58">Indonesian</option>
+<option value="2-7">Italiano</option></select>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='alerter container alert fade in navbar-fixed-top' id='alert-top' style='top:60px;display:none;'>
+<a class='close' data-dismiss='alert' href='#'>
+&times;
+</a>
+<strong class='alert-message-title'>
+Alert!
+</strong>
+<span class='alert-message-body'>
+Alert Message here
+</span>
+</div>
+<div class='alerter alert fade in navbar-fixed-top' id='alert-box' style='left:40%;top:40%;width:200px;display:none;'>
+<div style='text-align:center;'>
+<strong class='alert-message-title'>
+Alert!
+</strong>
+<span class='alert-message-body'>
+Alert message here
+</span>
+</div>
+</div>
+
+
+
+<div id='page_content'>
+<div class='cfx' id='main_container'>
+<ul class="cfx" id="breadcrumbs"><li class="home"><a href="/">Home</a></li><li class=""><a href="/profiles/search">Member</a></li><li class=""><a href="/3076">aratin</a></li><li class=""><span>aratin's entries</span></li></ul>
+<div class='cfx' id='main_container'>
+<div id='block_tab'>
+	 <div id="friend_activity_container" class="cfx">
+	 <div id="block_tab">
+	 <div class="tab friends_home on_middle ">
+	 	<a href="/3076">aratin's Home</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	<a href="/3076/friends">Friends</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle selected">
+	 	Journal
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	<a href="/3076/notebook">Notebook</a>
+	   </div>
+	   <div class="tab_spacer on_middle">&nbsp;</div>
+	   <div class="tab on_middle ">
+	 	Photo Album
+	   </div>
+	 </div>
+	</div>
+
+
+</div>
+<div id='main'>
+<div class='cfx'>
+<div class='tit_03'>
+<ul class="pagination"><li>1</li> <li><a href="/3076/journals?page=2">2</a></li> <a href="/3076/journals?page=3">3</a><li class="pager_next"><a href="/3076/journals?page=2">Next</a></li></ul>
+<h3>
+aratin's entry
+(45)
+</h3>
+</div>
+<div class='spaced center center_bdb d_block pb_20' id='write_entry_btn' style='margin-top:0'>
+<a href="/journals/edit?post_from=My+Journals" class="bt_lvs d_block w70"><span class='i_s'>Post an entry now!</span>
+</a></div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/1496262">For students at Okinawa.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''> Hello, long time no see everyone here.
+
+I&#39;ve been busy as always but very fine.
+
+I&#39;m wondering how many people who lives in ...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>511</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>0</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+May 26, 2012 15:37
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/1114187">Long time no see.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>How are you ? 
+I&#39;m pretty fine but I&#39;ve been pretty busy to work a lot so I don&#39;t study English lately.
+It passed 6 month s...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>546</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>0</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Sep 27, 2011 00:05
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/736373">First episode &quot;A foolish guy part 2&quot;</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>高校を卒業して、オレはシズオカの工場へ一年半の出稼ぎに出た。
+After graduation high school, I work away to Shizuoka factory which makes air conditioners.
+
+金を貯め、車の免許と...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>603</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>1</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Dec 21, 2010 21:39
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/734864">Again long time no see.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>I&#39;m so sorry that I have not logged in the site very long term.
+I was so busy to studying to pass some government job exams.
+And I ...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>581</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>1</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Dec 20, 2010 15:00
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/365784">First episode  &quot;A foolish guy part 1&quot;</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>この物語は、オレこと、ハジが英語を好きになった過程と、英語とは関係のないたわいもない話を混ぜたものだ。
+This story is about why I, Haji, came to like the English language, which further ju...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>777</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>7</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 8, 2010 23:36
+<a href="/journals/search?tag=novel">novel</a>
+
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/365775">About my novel.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Hello everyone.
+I started writing novels in Japanese lately.
+And I want to make my foreign friend read it in English.
+So I asked for t...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>263</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>6</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 8, 2010 23:30
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356769">第一話　愚かな男　その5</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>
+
+
+
+♪　♪　♪
+
+とはいったものの、昼と深夜はバイトに明け暮れて、夜は学校、という生活を送っていたため、そいつらとさえ、ほとんど遊べなかった大学時代。
+そしてこの生活を、二回もダブったために６年も続ける羽目になる。（他の連中も似たようなもんだったが）
+自...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>563</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>Japanese&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 01:15
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356768">第一話　愚かな男　その4</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>
+
+
+♪　♪　♪
+
+
+オレは試験を難なくパスし、トーキョーへ出た。
+新宿駅に降り立ち、肥溜めのような人の数を見て人ゴミの語源を理解したことを覚えている。
+
+オレは夜間の大学に入った。
+浪人生活終盤で、学費と生活費を自分でまかなうことを考えたら、夜間の大学...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>382</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>0</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>Japanese&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 01:14
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356762">第一話　愚かな男　その3</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>高校を卒業して、オレはシズオカの工場へ一年半の出稼ぎに出た。
+金を貯め、車の免許と車を買うためだったのだが、オレは出稼ぎから戻ってきたときに何を血迷ったのか、その金で大学へ行くことを決心した。
+成績通知票を見る限り、オレは学校でいくらでも眠れることくらいしか自慢すること...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>320</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>4</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>Japanese&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 01:12
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356756">第一話　愚かな男　その2</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>♪　♪　♪
+
+オレの生き恥物語の始まりはこんな感じ。
+オレとホコリはオキナワで生まれ育ち、中学で出会った。
+狂ったようにギャンブルをした。
+二人しかいないのにトランプやマージャンをし、互いが互いを騙し合い、イカサマを競い合い、互いのモノを借りてはパくり、少ない金を...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>280</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>2</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>Japanese&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 01:10
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356736">第一話　愚かな男　その1</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>この物語は、オレこと、ハジが英語を好きになった過程と、英語とは関係のないたわいもない話を混ぜたものだ。
+どうしようもなく他人と自分を比較することが大好きで、下は見下し、上には敬意を示せない。救いようのない傲慢なオレのストーリー。
+
+
+先に謝っておく。
+正直な気持ち...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>338</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>5</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>3</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>Japanese&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 00:54
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/356732">お願い。</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>どうも、お久ぶりです。あらちんです。
+ところで、二ヶ月前から、僕は日本語で小説を書き始めています。
+これを、英語に直して、英語圏の友人に読んでもらいたいと思っています。
+ですが、時間的な余裕があまりないことと、英語で書かれた小説を読んだことがなく、文学的な表現を英語で...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>377</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>0</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Feb 1, 2010 00:51
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/235070">Names.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Hi.
+
+ I studied the world histories ,including Japanese one, all most whole day today. 
+
+And I thought there was a lot of weird but c...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>392</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>10</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>2</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Sep 12, 2009 23:40
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/234417">I wonder... </a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Hello. Long time no see everyone. 
+
+I&#39;ve been very busy so I didn&#39;t come the Lang-8 a few. =( 
+
+By the way, sometimes I wonde...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>315</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>2</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>0</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Sep 12, 2009 00:57
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/150316">What&#39;s the fucking why the world is weird and something beautiful.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>I forgot how huge the sky was. 
+I forgot how huge the sea was.
+I forgot clouds had like something human faces.
+I feel like where I liv...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>433</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>4</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+May 18, 2009 00:11
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/150266">Moving Okinawa.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>HI there. I have been really busy lately.
+Well, I finally moved Okinawa and entered like some private school for an exam for officially ...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>247</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>1</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+May 17, 2009 23:22
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/78039">Hello...　やばい！</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>I have been feeling ill almost of all the month now.
+I&#39;ve never experiensed such a long term cold so I feel depressed because I thou...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>357</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>1</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Jan 29, 2009 14:10
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/66093">I&#39;m in an internet cafe with my best friend. =P</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Hi there. I just went to drink with my best friend whom I know when we were children and the distance between our homes are just really c...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>246</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>0</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>1</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Jan 6, 2009 02:49
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/62759">Blood group.</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>Do you know most of (stereotipical) Japanese people think Blood group makes people&#39;s characters an impact more or less ?
+
+*For exam...</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>292</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>1</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>3</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Dec 28, 2008 04:43
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+<div class='' style=''>
+<div class='vertical-spaced journals_flex floated_on_right'>
+<a href="/3076" class="user_name">aratin</a>
+
+<h3 class='journal_title'>
+<a href="http://lang-8.com/3076/journals/62737">I got to Okinawa yesterday !!!!!!!!!!!!!!!!!!!!!</a>
+<div class='edit_links'>
+</div>
+</h3>
+<span class='journal_body floated_on_left' style=''>BTWBTWBTWBTW, I might forget saying I would go to Okinawa.
+Because of the sucky asigment makes me nerveus.
+But I releaced that presser....</span>
+<div class='floated_on_left' style='width: 100%; margin-top: 5px'>
+<ul class='journal_status floated_on_right'>
+<li class='privacy_level_5' data-original-title='Public' rel='tooltip'>&nbsp;</li>
+<li class='visiters' data-original-title='Views' rel='tooltip' title='Views'>294</li>
+<li class='comment_num' data-original-title='Comments' rel='tooltip' title='Comments'>3</li>
+<li class='corrections_num' data-original-title='Corrections' rel='tooltip' title='Corrections'>2</li>
+<li class='studying' data-original-title='The language that needs to be corrected' rel='tooltip'>English&nbsp;</li>
+</ul>
+<span class='journal_date floated_on_left'>
+Dec 28, 2008 01:42
+</span>
+<script type='text/javascript'>//<![CDATA[
+$j(function(){var journalCounterView=new Lang8.Views.JournalCounterView();});
+//]]></script>
+
+</div>
+
+</div>
+</div>
+
+<div class='entry_ichiran'>
+<ul class="pagination"><li>1</li> <li><a href="/3076/journals?page=2">2</a></li> <a href="/3076/journals?page=3">3</a><li class="pager_next"><a href="/3076/journals?page=2">Next</a></li></ul>
+</div>
+</div>
+</div>
+<div id='right'>
+<div class='cfx friend_detail_sidebar' id='friend_detail'>
+<div class='box'>
+<div id='profile_image'>
+<a href="/3076/images"><img alt="Pictures" src="http://image.lang-8.com/w200_h200/240d1459f0d569bc92af3ff2e9705bcb1954dcaa.jpg"/></a>
+</div>
+</div>
+<div class='box'>
+<h2>aratin</h2>
+<div class='timeago'>
+(
+Last log in
+: More than 3 days ago
+)
+</div>
+</div>
+<div class='box'>
+<dl class='language_status cfx lang_status_box'>
+<dt class='speaking'>Native language</dt>
+<dd class='speaking_lang_name'>Japanese</dd>
+<dt class='studying'>Language of study</dt>
+<dd class='studying_lang_name'>
+
+English
+</dd>
+</dl>
+</div>
+<div class='box'>
+<div class='bdbox'>
+<table class='entry_status'>
+<tr>
+<td class='l01'>
+<p><a href="/3076/journals">55</a></p>
+<span>Entries Written</span>
+</td>
+<td class='l02'>
+<p><a href="/3076/correction_logs/sent">19</a></p>
+<span>Corrections made</span>
+</td>
+<td class='l03'>
+<p><a href="/3076/correction_logs/received">77</a></p>
+<span>Corrections received</span>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+<div class='box'>
+<div class='mb_20' id='communication_buttons'>
+</div>
+</div>
+<div class='box'>
+<div class='profile_bx'>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>ID</div>
+3076
+</div>
+<div class='user_profile_row' data-content='Every time you make corrections or receive Thanks points, you get more L points. The more L points you have, the higher your posts will be listed, making them more likely to be corrected.' data-original-title='L points' data-placement='top' data-trigger='hover' rel='popover' title='L points'>
+<div class='subtitle floated_on_left'>L points</div>
+1,450
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Location</div>
+Japan
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Nation and region</div>
+Japan
+
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Real name</div>
+あらちん
+
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Age</div>
+35
+
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Birthday</div>
+12/1
+
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Sex</div>
+Male
+
+</div>
+<div class='user_profile_row'>
+<div class='subtitle floated_on_left'>Twitter ID</div>
+<a href="http://twitter.com/aratinaratin" target="_blank">aratinaratin</a>
+
+</div>
+</div>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3 style='margin-top:10px'>Ranking</h3>
+</div>
+
+<span class='l_point_ranking'>445</span>
+/
+1,165,467
+(English)
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3 style='margin-top:10px'>Points</h3>
+</div>
+<ul class='friend_status cfx'>
+<li class='corrections_num_big' data-content='Number of corrections made.' data-original-title='No. of corrections' data-trigger='hover' rel='popover' title='No. of corrections'>
+19
+</li>
+<li class='thanks_pt' data-content='Number of Thanks Points from users you have helped.' data-original-title='Stars' data-trigger='hover' rel='popover' title='Stars'>
+5
+</li>
+<li class='good_pt' data-content='Number of corrections rated highly by other native speakers.' data-original-title='Native Nods' data-trigger='hover' rel='popover' title='Native Nods'>
+0
+</li>
+</ul>
+<ul class='floated_on_left' id='correction_history' style='margin-top:10px'>
+<li><a href="/3076/correction_logs/sent">History of corrections by aratin</a></li>
+<li><a href="/3076/correction_logs/received">History of corrections for aratin</a></li>
+</ul>
+</div>
+</div>
+
+<div class='box'>
+<div id='journals_calendar'>
+<div class='yui-skin-sam'>
+<div id='jour_cal'>
+    <div id="cal1Container"></div>
+    <script type="text/javascript">//<![CDATA[
+(function(){var cal1=null,popupHolder=[],cal_journal_dates={},str_dates='',date_info=[{"journal_id":1496262,"journal_date":1338014266},{"journal_id":1114187,"journal_date":1317049528},{"journal_id":736373,"journal_date":1292935179},{"journal_id":734864,"journal_date":1292824821},{"journal_id":365784,"journal_date":1265639776},{"journal_id":365775,"journal_date":1265639457},{"journal_id":356769,"journal_date":1264954537},{"journal_id":356768,"journal_date":1264954470},{"journal_id":356762,"journal_date":1264954325},{"journal_id":356756,"journal_date":1264954219},{"journal_id":356736,"journal_date":1264953253},{"journal_id":356732,"journal_date":1264953066},{"journal_id":235070,"journal_date":1252766452},{"journal_id":234417,"journal_date":1252684654},{"journal_id":150316,"journal_date":1242573086},{"journal_id":150266,"journal_date":1242570158},{"journal_id":78039,"journal_date":1233205845},{"journal_id":66093,"journal_date":1231177778},{"journal_id":62759,"journal_date":1230407020},{"journal_id":62737,"journal_date":1230396164},{"journal_id":61308,"journal_date":1230079064},{"journal_id":61247,"journal_date":1230058578},{"journal_id":60596,"journal_date":1229937677},{"journal_id":59241,"journal_date":1229628116},{"journal_id":54440,"journal_date":1228719677},{"journal_id":53499,"journal_date":1228537193},{"journal_id":49161,"journal_date":1227743427},{"journal_id":49029,"journal_date":1227715081},{"journal_id":44480,"journal_date":1226812424},{"journal_id":44378,"journal_date":1226789052},{"journal_id":44337,"journal_date":1226775604},{"journal_id":44089,"journal_date":1226721721},{"journal_id":33383,"journal_date":1224272768},{"journal_id":31842,"journal_date":1223816190},{"journal_id":31088,"journal_date":1223568722},{"journal_id":30675,"journal_date":1223450899},{"journal_id":30451,"journal_date":1223383271},{"journal_id":30289,"journal_date":1223327112},{"journal_id":29711,"journal_date":1223157838},{"journal_id":29186,"journal_date":1222991438},{"journal_id":25616,"journal_date":1222036433},{"journal_id":17777,"journal_date":1217091907},{"journal_id":6482,"journal_date":1204613035},{"journal_id":5900,"journal_date":1203194983},{"journal_id":5888,"journal_date":1203183657}],now_server2local="09/2018",selected_date='',date_info_json=Object.toJSON(date_info),args=getArgsFromHref(location.href);if(args['begin']!=null){var begin_date_a=args['begin'].split('-');var page_date=begin_date_a[1]+'/'+begin_date_a[0];}else if(args['date']!=null){var date_a=args['date'].split('-');var page_date=date_a[1]+'/'+date_a[0];}else{var page_date=now_server2local;}var pathname=location.pathname.split('/');for(var i=0,len=date_info.length;i<len;++i){var tmp_date=new Date(parseInt(date_info[i].journal_date*1000)).toYAHOODateString();if(cal_journal_dates[tmp_date]){cal_journal_dates[tmp_date]=cal_journal_dates[tmp_date]+'/'+date_info[i].journal_id;}else{cal_journal_dates[tmp_date]=date_info[i].journal_id;str_dates=str_dates+','+tmp_date;}}function init(){cal1=new YAHOO.widget.Calendar('cal1','cal1Container',{LOCALE_MONTHS:'short',LOCALE_WEEKDAYS:'1char',pagedate:page_date});cal1.styleCellDefault=function(workingDate,cell){YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_OOB);}
+cal1.renderCellDefault=function(workingDate,cell){cell.innerHTML='<a class="'+cal1.Style.CSS_CELL_SELECTOR+'">'+cal1.buildDayLabel(workingDate)+"</a>";}
+cal1.renderCellHasJournals=function(workingDate,cell){cell.innerHTML='<a href="/'+'3076'+'/journals?date='+workingDate.toStringYYMMDD()+'" class="'+cal1.Style.CSS_CELL_SELECTABLE+'">'+cal1.buildDayLabel(workingDate)+"</a>";YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_SELECTABLE);YAHOO.util.Dom.addClass(cell,cal1.Style.CSS_CELL_HIGHLIGHT1);if(workingDate.getDate()==cal1.today.getDate()&&workingDate.getMonth()==cal1.today.getMonth()&&workingDate.getFullYear()==cal1.today.getFullYear()){YAHOO.util.Dom.removeClass(cell,cal1.Style.CSS_CELL_TODAY);}return YAHOO.widget.Calendar.STOP_RENDER;}
+cal1.addRenderer(str_dates,cal1.renderCellHasJournals);cal1.render();}function getArgsFromHref(sHref){var args=sHref.split('?');var retargs={}
+if(args[0]==sHref){return"";}var str=args[1];args=str.split('&');for(var i=0;i<args.length;i++){str=args[i];var arg=str.split('=');if(arg.length<=1)continue;retargs[arg[0]]=arg[1];}return retargs;}YAHOO.util.Event.onAvailable('cal1Container',init);})();
+//]]></script>
+
+</div>
+</div>
+</div>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Journal Statistics</h3>
+</div>
+<div class='cfx' id='studying_status'>
+<table class='table side-bar table_statusstudy'>
+<tr>
+<th>Total</th>
+<th>This month</th>
+<th>This week</th>
+</tr>
+<tr>
+<td>
+<p><a href="/3076/journals">45</a></p>
+<span>
+Entries Written
+</span>
+</td>
+<td>
+<p><a href="/3076/journals" id="monthCount">0</a></p>
+<span>
+Entries Written
+</span>
+</td>
+<td>
+<p><a href="/3076/journals" id="todayCount">0</a></p>
+<span>
+Entries Written
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+(function(){var date_info=[{"journal_id":1496262,"journal_date":1338014266},{"journal_id":1114187,"journal_date":1317049528},{"journal_id":736373,"journal_date":1292935179},{"journal_id":734864,"journal_date":1292824821},{"journal_id":365784,"journal_date":1265639776},{"journal_id":365775,"journal_date":1265639457},{"journal_id":356769,"journal_date":1264954537},{"journal_id":356768,"journal_date":1264954470},{"journal_id":356762,"journal_date":1264954325},{"journal_id":356756,"journal_date":1264954219},{"journal_id":356736,"journal_date":1264953253},{"journal_id":356732,"journal_date":1264953066},{"journal_id":235070,"journal_date":1252766452},{"journal_id":234417,"journal_date":1252684654},{"journal_id":150316,"journal_date":1242573086},{"journal_id":150266,"journal_date":1242570158},{"journal_id":78039,"journal_date":1233205845},{"journal_id":66093,"journal_date":1231177778},{"journal_id":62759,"journal_date":1230407020},{"journal_id":62737,"journal_date":1230396164},{"journal_id":61308,"journal_date":1230079064},{"journal_id":61247,"journal_date":1230058578},{"journal_id":60596,"journal_date":1229937677},{"journal_id":59241,"journal_date":1229628116},{"journal_id":54440,"journal_date":1228719677},{"journal_id":53499,"journal_date":1228537193},{"journal_id":49161,"journal_date":1227743427},{"journal_id":49029,"journal_date":1227715081},{"journal_id":44480,"journal_date":1226812424},{"journal_id":44378,"journal_date":1226789052},{"journal_id":44337,"journal_date":1226775604},{"journal_id":44089,"journal_date":1226721721},{"journal_id":33383,"journal_date":1224272768},{"journal_id":31842,"journal_date":1223816190},{"journal_id":31088,"journal_date":1223568722},{"journal_id":30675,"journal_date":1223450899},{"journal_id":30451,"journal_date":1223383271},{"journal_id":30289,"journal_date":1223327112},{"journal_id":29711,"journal_date":1223157838},{"journal_id":29186,"journal_date":1222991438},{"journal_id":25616,"journal_date":1222036433},{"journal_id":17777,"journal_date":1217091907},{"journal_id":6482,"journal_date":1204613035},{"journal_id":5900,"journal_date":1203194983},{"journal_id":5888,"journal_date":1203183657}],cur_month_counter=0,week_counter=0;var now_date=new Date(),DateMath=YAHOO.widget.DateMath;var now_date_week_begin=DateMath.getFirstDayOfWeek(now_date,0);var now_date_week_end=DateMath.add(now_date_week_begin,'D',6);for(var i=0,len=date_info.length;i<len;++i){var tmp_date=new Date(date_info[i].journal_date*1000);if(tmp_date.getFullYear()==now_date.getFullYear()){if(tmp_date.getMonth()==now_date.getMonth()){cur_month_counter+=1;if(DateMath.getWeekNumber(tmp_date,0)==DateMath.getWeekNumber(now_date,0)){week_counter+=1;}}}}if(week_counter!=0){$('todayCount').update(week_counter);$('todayCount').href=$('todayCount').href+'?begin='+now_date_week_begin.toStringYYMMDD()+'&end='+now_date_week_end.toStringYYMMDD();}else{$('todayCount').href="#";}if(cur_month_counter!=0){$('monthCount').update(cur_month_counter);$('monthCount').href=$('monthCount').href+'?begin='+DateMath.findMonthStart(now_date).toStringYYMMDD()+'&end='+DateMath.findMonthEnd(now_date).toStringYYMMDD();}else{$('monthCount').href="#";}})();
+//]]></script>
+
+<div class='box'>
+<div class='tit_03'>
+<h3>Latest entries</h3>
+</div>
+<table class='table side-bar ar_icobox'>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/1496262">For students at Okinawa. (0) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/1114187">Long time no see. (0) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/736373">First episode &quot;A foolish guy part 2&quot; (2) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/734864">Again long time no see. (2) </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/365784">First episode  &quot;A foolish guy part 1&quot; (8) </a></td>
+</tr>
+</table>
+<p class='read_more2'><a href="/3076/journals" class="bt_lv3"><i class='i_arrow'></i>Read more</a></p>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Latest comments</h3>
+</div>
+<table class='table ar_icobox side-bar'>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/44089">Jun 14 </a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/736373">Dec 22 Will</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/734864">Dec 21 aratin</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/734864">Dec 21 Will</a></td>
+</tr>
+<tr>
+<td><a href="http://lang-8.com/3076/journals/356769">Oct 3 Josef</a></td>
+</tr>
+</table>
+<p class='read_more2'><a href="/3076/journals/comments" class="bt_lv3"><i class='i_arrow'></i>Read more</a></p>
+</div>
+<div class='box cfx' id='d_draft_list'>
+</div>
+<div class='box'>
+<div class='tit_03'>
+<h3>Entries by Month</h3>
+</div>
+<table class='table ar_icobox side-bar'>
+<tr>
+<th class='year'>2012</th>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2012-5-1&amp;end=2012-05-31">May (1)</a>
+</td>
+</tr>
+<tr>
+<th class='year'>2011</th>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2011-9-1&amp;end=2011-09-30">September (1)</a>
+</td>
+</tr>
+<tr>
+<th class='year'>2010</th>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2010-12-1&amp;end=2010-12-31">December (2)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2010-2-1&amp;end=2010-02-28">February (8)</a>
+</td>
+</tr>
+<tr>
+<th class='year'>2009</th>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2009-9-1&amp;end=2009-09-30">September (2)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2009-5-1&amp;end=2009-05-31">May (2)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2009-1-1&amp;end=2009-01-31">January (2)</a>
+</td>
+</tr>
+<tr>
+<th class='year'>2008</th>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-12-1&amp;end=2008-12-31">December (8)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-11-1&amp;end=2008-11-30">November (6)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-10-1&amp;end=2008-10-31">October (8)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-9-1&amp;end=2008-09-30">September (1)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-7-1&amp;end=2008-07-31">July (1)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-3-1&amp;end=2008-03-31">March (1)</a>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/3076/journals?begin=2008-2-1&amp;end=2008-02-29">February (2)</a>
+</td>
+</tr>
+</table>
+</div>
+
+<div class='spaced on_journal floated_on_left'>
+
+
+  <div class="spaced center">
+    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AllTop -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6717840198266056" data-ad-slot="6905863041"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+  </div>
+
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div data-search_url='' id='footer'>
+<div class='inner'>
+<div class='box clearfix'>
+<ul class='ft_parts_list f_left'>
+<ul class='ft_parts_list f_left'></ul>
+</ul>
+</div>
+<div class='box02 clearfix'>
+<ul>
+
+</ul>
+<ul>
+<li>
+<p>
+Study
+</p>
+<ul>
+<li><a href="/profiles/search">Member Search</a></li>
+<li><a href="/hotentries">Popular Entries</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+View
+</p>
+<ul>
+<li><a href="/rankings">Rankings</a></li>
+<li>
+<a href="/groups">Groups</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Help
+</p>
+<ul>
+<li><a href="/help/tumblr" target="_blank">Help</a></li>
+<li><a href="/register/term" target="_blank">Terms of Service</a></li>
+<li><a href="/register/privacy" target="_blank">Privacy Policy</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+About Lang-8
+</p>
+<ul>
+<li><a href="/help/law_1" target="_blank">特定商取引法に基づく表記</a></li>
+<li><a href="/help/donation" target="_blank">Donate</a></li>
+<li><a href="http://lang-8.jp/" target="_blank">Company</a></li>
+<li><a href="http://lang-8.jp/#recruit" target="_blank">Travailler pour Lang-8</a></li>
+<li>
+<a href='mailto:support@lang-8.com'>Contact us</a>
+</li>
+<li>&nbsp;</li>
+</ul>
+</li>
+</ul>
+<ul id='social_web_list'>
+<li class='icon_with twitter'>
+<a class='twitter-follow-button' data-show-count='false' href='https://twitter.com/lang8'>Follow @lang8</a>
+<script defer="defer" src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</li>
+<li class='icon_with facebook'><a href="http://www.facebook.com/lang8" target="_blank">Facebook page</a></li>
+<li class='icon_with rss'><a href="http://blog.lang-8.com" target="_blank">Lang-8 blog</a></li>
+</ul>
+</div>
+<div class='box03 clearfix'>
+<li class='f_left panel_list'>
+<a href='https://mixpanel.com/f/partner' target='_blank'>
+<img alt='Mobile and Web Analytics' src='https://mixpanel.com/site_media/images/partner/badge_light.png'/>
+</a>
+</li>
+<p class='copy f_right'>
+&copy; 2017 Lang-8, Inc. All rights reserved.
+</p>
+</div>
+</div>
+</div>
+
+
+<script type='text/javascript'>//<![CDATA[
+var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var pageTracker;autoRetry(function(){pageTracker=_gat._getTracker("UA-452011-7");pageTracker._setDomainName("none");pageTracker._setAllowLinker(true);pageTracker._initData();pageTracker._trackPageview("/before/journals");},2);
+//]]></script>
+
+
+<script type='text/javascript'>//<![CDATA[
+$j(function(){$j('[rel=tooltip]').tooltip();$j('[rel=popover]').popover();});
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+var cjsscript=document.createElement('script');cjsscript.src="/static/javascripts/control_js.js";var cjssib=document.getElementsByTagName('script')[0];cjssib.parentNode.insertBefore(cjsscript,cjssib);
+//]]></script>
+<div id='fb-root'></div>
+<script type='text/javascript'>//<![CDATA[
+(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=138873442911";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));
+//]]></script>
+</body>
+</html>
