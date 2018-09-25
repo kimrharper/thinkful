@@ -9,6 +9,7 @@ pandas = "*"
 keras = "*"
 numpy = "*"
 matplotlib = "*"
+statsmodels = "*"
 
 [dev-packages]
 
