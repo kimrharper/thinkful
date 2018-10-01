@@ -11,6 +11,7 @@ numpy = "*"
 matplotlib = "*"
 statsmodels = "*"
 missingno = "*"
+sklearn = "*"
 
 [dev-packages]
 
