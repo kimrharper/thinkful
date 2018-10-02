@@ -12,6 +12,7 @@ matplotlib = "*"
 statsmodels = "*"
 missingno = "*"
 sklearn = "*"
+python-mnist = "*"
 
 [dev-packages]
 
