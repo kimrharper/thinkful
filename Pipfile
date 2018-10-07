@@ -13,6 +13,7 @@ statsmodels = "*"
 missingno = "*"
 sklearn = "*"
 python-mnist = "*"
+opencv-python = "*"
 
 [dev-packages]
 
