@@ -105,3 +105,66 @@ def correlation(x,y):
         return covariance(x,y)/stdev_x/stdev_y
     else:
         return 0
+    
+    
+# probability
+
+def uniform_pdf(x_val):
+    return 1 if (x_val>=0 and x_val<1) else 0
+
+def uniform_cdf(x_val):
+    if x_val<0: return 0
+    elif x_val<1:return x_val
+    else: return 1
+    
+def normal_pdf(x_val,mu=0,sigma=1):
+    sqrt_two_pi = math.sqrt(2*math.pi)
+    return (math.exp(-(x_val-mu)**2/2/sigma**2))/(sqrt_two_pi*sigma)
+
+def normal_cdf(x_val,mu=0,sigma=1):
+    return (1+math.erf((x_val-mu) / math.sqrt(2) / sigma))/2
+
+def inverse_normal_cdf(p,mu=0,sigma=1,tolerance=0.00001):
+    # if not standard, compute standard and rescale
+    if mu!= 0 or sigma !=1:
+        return mu+sigma*inverse_normal_cdf(p,tolerance=tolerance)
+    
+    low_z = -10.0 #normal_cdf(-10) is ~0
+    high_z = 10.0 #normal_cdf(10) is ~1
+    while hi_z-low_z > tolerance:
+        mid_z = (low_z + hi_z) / 2 #eval midpoint
+        mid_p = normal_cdf(mid_z)  #cdf value for midpoint
+        if mid_p < p:
+            # midpoint is still to low
+            low_z=mid_z
+        elif mid_p >p:
+            # midpoint is too high
+            high_z = mid_z
+        else:
+            break
+    return mid_z
+
+def bernoulli_trial(p):
+    return 1 if np.random.random() < p else 0
+
+def binomial(n,p):
+    return sum(bernoulli_trial(p) for _ in range(n))
+
+"""make histogram with binomial probability range"""
+def make_hist(p,n,num_points):
+    data = [binomial(n,p) for _ in range(num_points)]
+    
+    histogram = Counter(data)
+    plt.bar([x-.4 for x in histogram.keys()],
+            [v/num_points for v in histogram.values()],
+            .8,
+            color='.75')
+    mu=p*n
+    sigma=math.sqrt(n*p*(1-p))
+    
+    xs = range(min(data),max(data)+1)
+    ys= [normal_cdf(i+.5,mu,sigma) - normal_cdf(i-.5,mu,sigma) for i in xs]
+    
+    plt.plot(xs,ys)
+    plt.title('Binomial Distribution vs Normal Approximation')
+    plt.show()
