@@ -1,6 +1,7 @@
 import math
 from collections import Counter
 from functools import partial,reduce
+import random
 
 # linalg
 
@@ -130,8 +131,9 @@ def inverse_normal_cdf(p,mu=0,sigma=1,tolerance=0.00001):
         return mu+sigma*inverse_normal_cdf(p,tolerance=tolerance)
     
     low_z = -10.0 #normal_cdf(-10) is ~0
-    high_z = 10.0 #normal_cdf(10) is ~1
-    while hi_z-low_z > tolerance:
+    hi_z = 10.0 #normal_cdf(10) is ~1
+    
+    while (hi_z - low_z) > tolerance:
         mid_z = (low_z + hi_z) / 2 #eval midpoint
         mid_p = normal_cdf(mid_z)  #cdf value for midpoint
         if mid_p < p:
@@ -139,7 +141,7 @@ def inverse_normal_cdf(p,mu=0,sigma=1,tolerance=0.00001):
             low_z=mid_z
         elif mid_p >p:
             # midpoint is too high
-            high_z = mid_z
+            hi_z = mid_z
         else:
             break
     return mid_z
