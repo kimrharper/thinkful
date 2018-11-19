@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "*"
+pandas = "*"
+keras = "*"
+numpy = "*"
+matplotlib = "*"
+statsmodels = "*"
+missingno = "*"
+sklearn = "*"
+python-mnist = "*"
+opencv-python = "*"
+fbprophet = "*"
+ipython = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
